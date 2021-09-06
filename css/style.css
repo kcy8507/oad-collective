@@ -1,0 +1,671 @@
+:root {
+  --text-color: black;
+  --background-color: white;
+  --accent-color: red;
+}
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.inner {
+  position: relative;
+  margin: 0 auto;
+  width: 1700px;
+  /* height: 1068px; */
+}
+
+.nav {
+  position: relative;
+  padding-top: 113px;
+}
+
+/* ---------toggle start------------ */
+.active {
+  display: none;
+}
+
+.cancel {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.left-logo {
+  position: absolute;
+  padding-top: 30px;
+  left: 0;
+  animation: leftLogo 0.2s ease-in-out;
+}
+
+.sidenav {
+  display: none;
+  background-color: var(--background-color);
+  width: 35%;
+  position: absolute;
+  right: 0;
+  height: 100%;
+  padding: 64px 92px 0px 54px;
+  z-index: 2;
+  animation: sidenavani 0.2s ease-in-out;
+  /* opacity: 0.5;
+  transition: opacity 1 1s ease-in; */
+}
+
+@keyframes sidenavani {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes leftLogo {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.sidenav__cancel img {
+  width: 30px;
+  height: 30px;
+}
+
+.sidenav__lists {
+  text-align: center;
+  margin-top: 41px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidenav__logo {
+  margin: 50px 0 60px 0px;
+}
+
+.sidenav__menu a {
+  font-family: "Noto Serif JP", serif;
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 1.9rem;
+}
+
+.sidenav__menu li {
+  margin-bottom: 60px;
+}
+
+.black_bg {
+  display: none;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* ---------toggle end------------ */
+
+.logo-white {
+  width: 245px;
+  height: 29px;
+  background-image: url(/images/white_logo.svg);
+  background-position: center;
+  background-size: cover;
+}
+.logo {
+  width: 245px;
+  height: 29px;
+  background-image: url(/images/logo.svg);
+  background-position: center;
+  background-size: cover;
+}
+
+.navbar__icons {
+  position: absolute;
+  top: 113px;
+  right: 0px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar__icons img {
+  padding-left: 30px;
+  width: 25px;
+  height: 25px;
+}
+
+#main__footer {
+  padding: 50px 0px;
+  text-align: center;
+  line-height: 1.4rem;
+}
+
+.footer__info {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1rem;
+}
+
+.footer_logo {
+  background-image: url(/images/logo.svg);
+  background-position: center;
+  background-size: cover;
+  width: 126px;
+  height: 15px;
+  margin: 10px auto;
+}
+/* -----------------------main section------------------------ */
+#main {
+  width: 100%;
+  height: 100vh;
+}
+
+.main__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 180px;
+}
+
+.main__img1 {
+  width: 398px;
+  height: 474px;
+  background-position: center;
+  background-size: cover;
+  background-image: url(/images/main-1.png);
+}
+.main__img2 {
+  width: 824px;
+  height: 474px;
+  background-position: center;
+  background-size: cover;
+  background-image: url(/images/main-2.png);
+}
+.main__img3 {
+  width: 398px;
+  height: 474px;
+  background-position: center;
+  background-size: cover;
+  background-image: url(/images/main-3.png);
+}
+/* ------------------------story section----------------------- */
+#story {
+  height: 100vh;
+}
+
+.story__bg {
+  background-image: url(/images/story1.png);
+  width: 1920px;
+  height: 751px;
+  background-position: center;
+  background-size: cover;
+}
+
+.story__container {
+  display: flex;
+  justify-content: center;
+  margin-top: 690px;
+}
+
+.story__text {
+  width: 804px;
+  font-size: 1.1rem;
+  line-height: 1.7rem;
+}
+
+.story__logo {
+  background-image: url(/images/logo.svg);
+  width: 241px;
+  height: 29px;
+  margin-right: 100px;
+}
+/* -----------------------------works section------------------------- */
+#works {
+  height: 100vh;
+}
+
+.works__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.works__title,
+.portfolio__title,
+.guide__title {
+  font-family: "Noto Serif JP", serif;
+  font-size: 1.5rem;
+  margin: 37px 0;
+}
+
+.works__textbox {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-evenly; */
+}
+
+.works__text1 {
+  font-family: "Noto Serif JP", serif;
+  font-size: 2.2rem;
+  color: #4a3e2e;
+  position: relative;
+  left: 300px;
+  margin-top: 113px;
+}
+
+.works__text2 {
+  width: 630px;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  position: absolute;
+  left: 830px;
+  margin-top: 113px;
+}
+/* ----------------------------portfolio section------------------------- */
+
+.portfolio__imgContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 112px 0;
+}
+
+.portfolio__imgContainer > div {
+  width: 399px;
+  height: 399px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 32px;
+}
+
+.portfolio__img1 {
+  background-image: url("/images/portfolio1.png");
+}
+.portfolio__img2 {
+  background-image: url("/images/portfolio2.png");
+}
+.portfolio__img3 {
+  background-image: url("/images/portfolio3.png");
+}
+.portfolio__img4 {
+  background-image: url("/images/portfolio4.png");
+}
+.portfolio__img5 {
+  background-image: url("/images/portfolio5.png");
+}
+.portfolio__img6 {
+  background-image: url("/images/portfolio6.png");
+}
+.portfolio__img7 {
+  background-image: url("/images/portfolio7.png");
+}
+.portfolio__img8 {
+  background-image: url("/images/portfolio8.png");
+}
+.portfolio__img9 {
+  background-image: url("/images/portfolio9.png");
+}
+.portfolio__img10 {
+  background-image: url("/images/portfolio10.png");
+}
+.portfolio__img11 {
+  background-image: url("/images/portfolio11.png");
+}
+.portfolio__img12 {
+  background-image: url("/images/portfolio12.png");
+}
+/* ------------------------- guide section ---------------------- */
+#guide {
+  height: 100vh;
+}
+ol > li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.452);
+  color: rgba(0, 0, 0, 0.753);
+  font-size: 1.1rem;
+  line-height: 3rem;
+}
+
+.toc-toggle {
+  display: none;
+}
+/* ------------------------contact section ---------------------- */
+.contact__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact__text {
+  text-align: center;
+  margin: 91px 0 44px 0;
+}
+
+.contact__text1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: var(--text-color);
+  font-size: 2rem;
+  margin-bottom: 13px;
+}
+.contact__text2 {
+  font-family: "Noto Sans KR", sans-serif;
+  color: var(--text-color);
+  line-height: 1.5rem;
+}
+
+.contact__personalform .contact__form {
+  height: 40px;
+  width: 450px;
+  position: relative;
+  margin: 35px 42px;
+}
+
+.contact__personalform .contact__email {
+  height: 40px;
+  width: 985px;
+  position: relative;
+  margin: 15px 0px 35px 0px;
+}
+
+.contact__personalform .contact__form input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  font-size: 17px;
+  border-bottom: 1px solid silver;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.contact__form input:focus ~ label,
+.contact__form input:valid ~ label {
+  transform: translateY(-20px);
+  font-size: 15px;
+  color: #000000;
+}
+
+.contact__form input:focus {
+  outline: 0;
+}
+.contact__personalform .contact__form label {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  color: grey;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.contact__form .underline {
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  bottom: 0;
+}
+.contact__form .underline:before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: #000000;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+.contact__form input:focus ~ .underline:before,
+.contact__form input:valid ~ .underline:before {
+  transform: scaleX(1);
+}
+
+.contact__personalform {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact__contents {
+  display: flex;
+  flex-direction: column;
+}
+.contact__contents label {
+  margin-bottom: 10px;
+  font-family: "Noto Sans KR", sans-serif;
+  color: grey;
+}
+
+textarea {
+  width: 985px;
+  height: 185px;
+  resize: none;
+  font-size: 1.1rem;
+  font-family: "Noto Sans KR", sans-serif;
+  border-bottom: 1px solid rgb(218, 218, 218);
+}
+
+textarea:focus,
+input:focus,
+input[type]:focus,
+.uneditable-input:focus {
+  border-color: rgb(0, 0, 0);
+  outline: 0 none;
+}
+
+.contact__btn {
+  text-align: center;
+  color: white;
+  font-family: "Noto Sans KR", sans-serif;
+  line-height: 3rem;
+  background-color: var(--text-color);
+  height: 49px;
+  width: 180px;
+
+  margin: 44px 0 119px 0;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1700px) {
+  .inner {
+    width: 1500px;
+  }
+  .portfolio__imgContainer > div {
+    width: 457px;
+    height: 457px;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .inner {
+    width: 1300px;
+  }
+  .portfolio__imgContainer > div {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .inner {
+    width: 1100px;
+  }
+  #story {
+    height: 100vh;
+  }
+  .portfolio__imgContainer > div {
+    width: 527px;
+    height: 527px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .inner {
+    width: 900px;
+  }
+  .portfolio__imgContainer > div {
+    width: 427px;
+    height: 427px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .contact__container {
+    margin-top: 50px;
+  }
+  .contact__personalform .contact__form {
+    width: 696px;
+    margin-top: 10px;
+  }
+  .contact__personalform .contact__email {
+    width: 696px;
+    margin-top: 10px;
+  }
+  .contact__personalform {
+    flex-direction: column;
+  }
+  .contact__contents {
+    width: 696px;
+    margin-top: 20px;
+  }
+  textarea {
+    width: 696px;
+  }
+  .contact__btn {
+    width: 206px;
+    height: 57px;
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .inner {
+    width: 750px;
+  }
+  .portfolio__imgContainer > div {
+    width: 357px;
+    height: 357px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .inner {
+    width: 700px;
+  }
+
+  #main {
+    background-position: -400px 0px;
+  }
+  .sidenav {
+    width: 100%;
+  }
+  .sidenav__cancel img {
+    position: absolute;
+    left: 190px;
+  }
+  .navbar__lists {
+    display: none;
+  }
+  .navbar__logo {
+    position: absolute;
+    left: 0;
+    top: 60px;
+  }
+
+  #story {
+    height: 100vh;
+  }
+
+  #portfolio {
+    height: 100%;
+  }
+  .portfolio__imgContainer > div {
+    width: 330px;
+    height: 330px;
+  }
+  .portfolio__imgContainer {
+    margin: 130px 0px 30px 0px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .inner {
+    width: 600px;
+  }
+  .portfolio__imgContainer > div {
+    width: 277px;
+    height: 277px;
+  }
+  .contact__personalform .contact__form {
+    width: 420px;
+  }
+  .contact__contents {
+    width: 420px;
+    margin-top: 20px;
+  }
+  textarea {
+    width: 420px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .inner {
+    width: 500px;
+  }
+  .portfolio__imgContainer > div {
+    width: 230px;
+    height: 230px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .inner {
+    width: 410px;
+  }
+  #main {
+    background-image: url(/images/mobile_main.png);
+    height: 813px;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .sidenav__logo {
+    background-size: cover;
+    width: 194px;
+    height: 40px;
+  }
+  .navbar__logo .logo {
+    background-size: cover;
+    width: 143px;
+    height: 32px;
+    background-image: url(/images/mobile_logo.png);
+    margin-top: 5px;
+  }
+  .sidenav {
+    padding-right: 30px;
+  }
+  .sidenav__cancel img {
+    left: 120px;
+  }
+
+  #portfolio {
+    height: 100%;
+  }
+  .portfolio__imgContainer {
+    margin: 170px 0 105px 0;
+  }
+  .portfolio__imgContainer > div {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+  }
+
+  .contact__personalform .contact__form {
+    width: 420px;
+  }
+  .contact__contents {
+    width: 420px;
+    margin-top: 20px;
+  }
+  textarea {
+    width: 420px;
+  }
+}
