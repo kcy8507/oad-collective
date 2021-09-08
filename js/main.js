@@ -17,22 +17,13 @@ window.onload = function () {
   document.querySelector(".cancel").addEventListener("click", offClick);
 };
 
-function openClose() {
-  function onClick() {
-    document.querySelector(".toc-content").style.display = block;
-    document.querySelector(".toc-toggle").style.display = block;
-  }
-  function offClick() {
-    document.querySelector(".toc-toggle").style.display = none;
-  }
-  document.querySelector(".toc-content").addEventListener("click", onClick);
-  document.querySelector(".toc-content").addEventListener("click", offClick);
-}
-// function openClose() {
-//   if (document.querySelector(".toc-content").style.display === "block") {
-//     document.querySelector(".toc-toggle").style.display = "none";
-//   } else {
-//     document.querySelector(".toc-content").style.display = "block";
-//     document.querySelector(".toc-toggle").style.display = "none";
+// window.onload = function () {
+//   function onClick() {
+//     document.querySelector(".answer").style.display = "block";
 //   }
-// }
+//   function offClick() {
+//     document.querySelector(".answer").style.display = "none";
+//   }
+//   document.querySelector(".question").addEventListener("click", onClick);
+//   document.querySelector(".question").addEventListener("click", offClick);
+// };
