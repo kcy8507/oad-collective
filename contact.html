@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/reset.css" />
     <script src="/js/main.js" defer></script>
+    <script src="/js/form-submission-handler.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
@@ -81,30 +82,36 @@
               </div>
             </div>
 
-            <div class="contact__box">
+            <form class="contact__box gform" method="POST"
+            action="https://script.google.com/macros/s/AKfycbwv6BR7gJ1izmctaO_0cP-DU035rtTgD8etimTh/exec">
               <div class="contact__personalform">
                 <div class="contact__form">
-                  <input type="text" required />
+                  <input id="name" name="이름" required />
                   <div class="underline"></div>
                   <label>이름</label>
                 </div>
                 <div class="contact__form">
-                  <input type="text" required />
+                  <input id="email"
+                  name="이메일주소"
+                  type="text"
+                  value=""
+                  required required />
                   <div class="underline"></div>
                   <label>이메일주소</label>
                 </div>
                 <div class="contact__form">
-                  <input type="text" required />
+                  <input id="phone" name="전화번호" required />
                   <div class="underline"></div>
                   <label>전화번호</label>
                 </div>
               </div>
               <div class="contact__contents">
                 <label>문의내용</label>
-                <textarea></textarea>
+                <textarea id="message"
+                name="문의내용"></textarea>
               </div>
               <button class="contact__btn">문의하기</button>
-            </div>
+            </form>
           </div>
         </div>
       </div>

@@ -14,6 +14,10 @@ body {
   /* height: 1068px; */
 }
 
+.hidden {
+  display: none;
+}
+
 .nav {
   position: relative;
   padding-top: 113px;
@@ -326,7 +330,6 @@ ol > li {
 
 .answer {
   height: 100px;
-  background-color: yellow;
   margin: 10px;
 }
 /* ------------------------contact section ---------------------- */
@@ -906,4 +909,9 @@ input[type]:focus,
   textarea {
     width: 514px;
   }
+}
+
+/* email */
+#honeypot {
+  display: none;
 }
