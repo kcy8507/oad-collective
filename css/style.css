@@ -273,7 +273,7 @@ body {
   margin: 20px 0 112px 0;
 }
 
-.portfolio__imgContainer > div {
+.portfolio__imgContainer > .lightwidget-widget {
   width: 399px;
   height: 399px;
   background-size: cover;
@@ -499,7 +499,7 @@ input[type]:focus,
   .inner {
     width: 1500px;
   }
-  .portfolio__imgContainer > div {
+  .portfolio__imgContainer > .lightwidget-widget {
     width: 480px;
     height: 480px;
   }
@@ -509,7 +509,7 @@ input[type]:focus,
   .inner {
     width: 1300px;
   }
-  .portfolio__imgContainer > div {
+  .portfolio__imgContainer > .lightwidget-widget {
     width: 410px;
     height: 410px;
   }
@@ -541,7 +541,7 @@ input[type]:focus,
   #story {
     height: 100vh;
   }
-  .portfolio__imgContainer > div {
+  .portfolio__imgContainer > .lightwidget-widget {
     width: 527px;
     height: 527px;
   }
@@ -595,7 +595,7 @@ input[type]:focus,
   .inner {
     width: 900px;
   }
-  .portfolio__imgContainer > div {
+  .portfolio__imgContainer > .lightwidget-widget {
     width: 432px;
     height: 432px;
   }
@@ -655,7 +655,7 @@ input[type]:focus,
   .inner {
     width: 750px;
   }
-  .portfolio__imgContainer > div {
+  .portfolio__imgContainer > .lightwidget-widget {
     width: 357px;
     height: 357px;
   }
@@ -777,7 +777,7 @@ input[type]:focus,
     display: none;
   }
 
-  .portfolio__imgContainer > div {
+  .portfolio__imgContainer > .lightwidget-widget {
     width: 342px;
     height: 342px;
     margin-bottom: 14px;
@@ -807,7 +807,7 @@ input[type]:focus,
   .inner {
     width: 530px;
   }
-  .portfolio__imgContainer > div {
+  .portfolio__imgContainer > .lightwidget-widget {
     width: 258px;
     height: 258px;
   }
@@ -822,7 +822,7 @@ input[type]:focus,
   .portfolio__imgContainer {
     margin: 50px 0 105px 0;
   }
-  .portfolio__imgContainer > div {
+  .portfolio__imgContainer > .lightwidget-widget {
     width: 245px;
     height: 245px;
     margin-bottom: 10px;
