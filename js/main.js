@@ -1,28 +1,36 @@
-document
-  .querySelector(".navbar__toggleBtn")
-  .addEventListener("click", navClickOn);
-document.querySelector(".cancel").addEventListener("click", navClickOff);
-// document.querySelector(".question").addEventListener("click", guideClickOn);
-// document.querySelector(".question").addEventListener("click", guideClickOff);
+// document
+//   .querySelector(".navbar__toggleBtn")
+//   .addEventListener("click", navClickOn);
+// document.querySelector(".cancel").addEventListener("click", navClickOff);
 
-function navClickOn() {
-  document.querySelector(".sidenav").style.display = "block";
-  document.querySelector(".black_bg").style.display = "block";
+// function navClickOn() {
+//   document.querySelector(".sidenav").style.display = "block";
+//   document.querySelector(".black_bg").style.display = "block";
+//   document.querySelector("body").style.overflow = "hidden";
+//   document.querySelector(".store__categ").style.visibility = "hidden";
+// }
+// function navClickOff() {
+//   document.querySelector(".sidenav").style.display = "none";
+//   document.querySelector(".black_bg").style.display = "none";
+//   document.querySelector("body").style.removeProperty("overflow");
+//   document.querySelector(".store__categ").style.removeProprty("visibility");
+// }
+
+const toggleBtn = document.querySelector(".navbar__toggleBtn");
+const nav = document.querySelector(".sidenav");
+const cancelBtn = document.querySelector(".cancel");
+const blackBg = document.querySelector(".black_bg");
+
+toggleBtn.addEventListener("click", function () {
+  nav.classList.toggle("hidden");
+  blackBg.classList.toggle("hidden");
   document.querySelector("body").style.overflow = "hidden";
-  document.querySelector(".store__categ").style.visibility = "hidden";
-}
-function navClickOff() {
-  document.querySelector(".sidenav").style.display = "none";
-  document.querySelector(".black_bg").style.display = "none";
+});
+cancelBtn.addEventListener("click", function () {
+  nav.classList.toggle("hidden");
+  blackBg.classList.toggle("hidden");
   document.querySelector("body").style.removeProperty("overflow");
-  document.querySelector(".store__categ").style.removeProprty("visibility");
-}
-// function guideClickOn() {
-//   document.querySelector(".answer").style.display = "block";
-// }
-// function guideClickOff() {
-//   document.querySelector(".answer").style.display = "none";
-// }
+});
 
 var questionArray = document.querySelectorAll(".question");
 var answerArray = document.querySelectorAll(".answer");

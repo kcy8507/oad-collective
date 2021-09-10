@@ -38,7 +38,7 @@ body {
 }
 
 .sidenav {
-  display: none;
+  /* display: none; */
   background-color: var(--background-color);
   width: 35%;
   position: absolute;
@@ -98,7 +98,7 @@ body {
 }
 
 .black_bg {
-  display: none;
+  /* display: none; */
   position: absolute;
   content: "";
   width: 100%;
@@ -162,7 +162,7 @@ body {
 /* -----------------------main section------------------------ */
 #main {
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 
 .main__container {
@@ -195,7 +195,7 @@ body {
 }
 /* ------------------------story section----------------------- */
 #story {
-  height: 100vh;
+  height: 1080px;
 }
 
 .story__bg {
@@ -328,13 +328,43 @@ ol > li {
   line-height: 3rem;
 }
 
+.question {
+  cursor: pointer;
+  animation: questionOpen 0.2s ease-in-out;
+}
+/* .question + .question {
+  animation: questionOpen 0.2s ease-in-out;
+  -webkit-transsition: -webkit-transform 2s;
+  transition:width 2s, height 2s, background-color 2s, transform 2s;
+} */
+
 .answer {
   height: 100px;
   margin: 10px;
+  animation: answerOpen 0.2s ease-in-out;
 }
+
+@keyframes questionOpen {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes answerOpen {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 /* ------------------------contact section ---------------------- */
 #contact {
-  height: 100vh;
+  height: 100%;
 }
 .contact__title {
   font-family: "Noto Serif KR", serif;
