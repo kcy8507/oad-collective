@@ -5,6 +5,7 @@
 }
 body {
   font-family: "Noto Sans KR", sans-serif;
+  word-break: keep-all;
 }
 
 .inner {
@@ -944,4 +945,34 @@ input[type]:focus,
 /* email */
 #honeypot {
   display: none;
+}
+
+/* ------------------------------media query 추가-------------------------- */
+
+@media screen and (max-width: 480px) {
+  .inner {
+    width: 350px;
+  }
+
+  #story {
+    height: 130vh;
+  }
+
+  .story__bg {
+    width: 100vw;
+  }
+
+  .story__text {
+    width: 100vw;
+  }
+
+  .contact__personalform .contact__form {
+    width: 350px;
+  }
+  .contact__contents {
+    width: 350px;
+  }
+  textarea {
+    width: 350px;
+  }
 }
