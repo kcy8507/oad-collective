@@ -221,7 +221,7 @@ body {
 .story__logo {
   background-image: url(/images/logo.svg);
   width: 241px;
-  height: 29px;
+  height: 28px;
   margin-right: 100px;
 }
 /* -----------------------------works section------------------------- */
@@ -570,7 +570,7 @@ input[type]:focus,
     width: 1100px;
   }
   #story {
-    height: 100vh;
+    height: 100%;
   }
   .portfolio__imgContainer > .lightwidget-widget {
     width: 527px;
@@ -596,6 +596,10 @@ input[type]:focus,
     left: 0;
     margin-top: 40px;
     font-size: 1rem;
+  }
+
+  #main__footer {
+    margin-top: 320px;
   }
 }
 
@@ -680,6 +684,10 @@ input[type]:focus,
     left: 0;
     margin: 70px auto;
   }
+
+  #main__footer {
+    margin-top: 400px;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -750,7 +758,7 @@ input[type]:focus,
   }
 
   #story {
-    height: 100vh;
+    height: 100%;
   }
 
   .story__bg {
@@ -782,9 +790,9 @@ input[type]:focus,
   }
 
   #main__footer {
-    margin-top: 110px;
     border-top: 1px solid rgba(0, 0, 0, 0.383);
   }
+
   #works {
     height: 100%;
   }
@@ -907,11 +915,7 @@ input[type]:focus,
     margin-bottom: 65px;
   }
   #main__footer {
-    margin-top: 0;
-  }
-
-  #story {
-    height: 120vh;
+    margin-top: 400px;
   }
   .story__bg {
     background-image: url(/images/phone_story_img1.png);
@@ -952,10 +956,6 @@ input[type]:focus,
 @media screen and (max-width: 480px) {
   .inner {
     width: 350px;
-  }
-
-  #story {
-    height: 130vh;
   }
 
   .story__bg {
