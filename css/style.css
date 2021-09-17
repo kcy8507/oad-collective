@@ -115,14 +115,14 @@ body {
 .logo-white {
   width: 245px;
   height: 29px;
-  background-image: url(/images/white_logo.svg);
+  background-image: url("../images/white_logo.svg");
   background-position: center;
   background-size: cover;
 }
 .logo {
   width: 245px;
   height: 29px;
-  background-image: url(/images/logo.svg);
+  background-image: url("../images/logo.svg");
   background-position: center;
   background-size: cover;
 }
@@ -153,7 +153,7 @@ body {
 }
 
 .footer_logo {
-  background-image: url(/images/logo.svg);
+  background-image: url("../images/logo.svg");
   background-position: center;
   background-size: cover;
   width: 130px;
@@ -178,21 +178,21 @@ body {
   height: 474px;
   background-position: center;
   background-size: cover;
-  background-image: url(/images/main-1.png);
+  background-image: url("../images/main-1.png");
 }
 .main__img2 {
   width: 824px;
   height: 474px;
   background-position: center;
   background-size: cover;
-  background-image: url(/images/main-2.png);
+  background-image: url("../images/main-2.png");
 }
 .main__img3 {
   width: 398px;
   height: 474px;
   background-position: center;
   background-size: cover;
-  background-image: url(/images/main-3.png);
+  background-image: url("../images/main-3.png");
 }
 /* ------------------------story section----------------------- */
 #story {
@@ -200,7 +200,7 @@ body {
 }
 
 .story__bg {
-  background-image: url(/images/story1.png);
+  background-image: url("../images/story1.png");
   height: 751px;
   background-position: center;
   background-size: cover;
@@ -219,7 +219,7 @@ body {
 }
 
 .story__logo {
-  background-image: url(/images/logo.svg);
+  background-image: url("../images/logo.svg");
   width: 241px;
   height: 28px;
   margin-right: 100px;
@@ -271,52 +271,52 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 20px 0 112px 0;
+  margin: 20px 0 50px 0;
 }
 
 .portfolio__imgContainer > .lightwidget-widget {
-  width: 399px;
-  height: 399px;
+  width: 387px;
+  height: 387px;
   background-size: cover;
   background-position: center;
   margin-bottom: 32px;
 }
 
 .portfolio__img1 {
-  background-image: url("/images/portfolio1.png");
+  background-image: url("../images/portfolio1.png");
 }
 .portfolio__img2 {
-  background-image: url("/images/portfolio2.png");
+  background-image: url("../images/portfolio2.png");
 }
 .portfolio__img3 {
-  background-image: url("/images/portfolio3.png");
+  background-image: url("../images/portfolio3.png");
 }
 .portfolio__img4 {
-  background-image: url("/images/portfolio4.png");
+  background-image: url("../images/portfolio4.png");
 }
 .portfolio__img5 {
-  background-image: url("/images/portfolio5.png");
+  background-image: url("../images/portfolio5.png");
 }
 .portfolio__img6 {
-  background-image: url("/images/portfolio6.png");
+  background-image: url("../images/portfolio6.png");
 }
 .portfolio__img7 {
-  background-image: url("/images/portfolio7.png");
+  background-image: url("../images/portfolio7.png");
 }
 .portfolio__img8 {
-  background-image: url("/images/portfolio8.png");
+  background-image: url("../images/portfolio8.png");
 }
 .portfolio__img9 {
-  background-image: url("/images/portfolio9.png");
+  background-image: url("../images/portfolio9.png");
 }
 .portfolio__img10 {
-  background-image: url("/images/portfolio10.png");
+  background-image: url("../images/portfolio10.png");
 }
 .portfolio__img11 {
-  background-image: url("/images/portfolio11.png");
+  background-image: url("../images/portfolio11.png");
 }
 .portfolio__img12 {
-  background-image: url("/images/portfolio12.png");
+  background-image: url("../images/portfolio12.png");
 }
 /* ------------------------- guide section ---------------------- */
 #guide {
@@ -531,8 +531,8 @@ input[type]:focus,
     width: 1500px;
   }
   .portfolio__imgContainer > .lightwidget-widget {
-    width: 480px;
-    height: 480px;
+    width: 300px;
+    height: 300px;
   }
 }
 
@@ -599,7 +599,7 @@ input[type]:focus,
   }
 
   #main__footer {
-    margin-top: 320px;
+    /* margin-top: 320px; */
   }
 }
 
@@ -686,7 +686,7 @@ input[type]:focus,
   }
 
   #main__footer {
-    margin-top: 400px;
+    /* margin-top: 400px; */
   }
 }
 
@@ -717,7 +717,7 @@ input[type]:focus,
   .main__img1 {
     width: 100px;
     height: 449px;
-    background-image: url(/images/pad_main_img1.png);
+    background-image: url("../images/pad_main_img1.png");
     background-position: center;
     background-size: cover;
   }
@@ -725,7 +725,7 @@ input[type]:focus,
   .main__img2 {
     width: 524px;
     height: 449px;
-    background-image: url(/images/pad_main_img2.png);
+    background-image: url("../images/pad_main_img2.png");
     background-position: center;
     background-size: cover;
   }
@@ -733,7 +733,7 @@ input[type]:focus,
   .main__img3 {
     width: 100px;
     height: 449px;
-    background-image: url(/images/pad_main_img3.png);
+    background-image: url("../images/pad_main_img3.png");
     background-position: center;
     background-size: cover;
   }
@@ -762,7 +762,7 @@ input[type]:focus,
   }
 
   .story__bg {
-    background-image: url(/images/pad_story_img1.png);
+    background-image: url("../images/pad_story_img1.png");
     height: 809px;
   }
 
@@ -821,9 +821,6 @@ input[type]:focus,
     height: 342px;
     margin-bottom: 14px;
   }
-  .portfolio__imgContainer {
-    margin: 50px 0px 30px 0px;
-  }
 
   .guide__title {
     display: none;
@@ -859,7 +856,7 @@ input[type]:focus,
     height: 100%;
   }
   .portfolio__imgContainer {
-    margin: 50px 0 105px 0;
+    margin: 50px 0 50px 0;
   }
   .portfolio__imgContainer > .lightwidget-widget {
     width: 245px;
@@ -882,7 +879,7 @@ input[type]:focus,
     width: 500px;
   }
   .main__img2 {
-    background-image: url(/images/phone_main_img1.png);
+    background-image: url("../images/phone_main_img1.png");
     width: 576px;
     height: 532px;
     background-position: center;
@@ -898,7 +895,7 @@ input[type]:focus,
 
   .navbar__logo .logo {
     background-size: cover;
-    background-image: url(/images/phone_logo.png);
+    background-image: url("../images/phone_logo.png");
     margin-top: 5px;
   }
   .sidenav {
@@ -915,10 +912,10 @@ input[type]:focus,
     margin-bottom: 65px;
   }
   #main__footer {
-    margin-top: 400px;
+    margin-top: 50px;
   }
   .story__bg {
-    background-image: url(/images/phone_story_img1.png);
+    background-image: url("../images/phone_story_img1.png");
     width: 576px;
     height: 607px;
   }
@@ -926,7 +923,7 @@ input[type]:focus,
     margin-top: 543px;
   }
   .story__logo {
-    background-image: url(/images/phone_story_logo.png);
+    background-image: url("../images/phone_story_logo.png");
     width: 272px;
     height: 46px;
   }
