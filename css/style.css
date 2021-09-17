@@ -145,6 +145,7 @@ body {
   padding: 50px 0px;
   text-align: center;
   line-height: 1.4rem;
+  margin-top: 50px;
 }
 
 .footer__info {
@@ -204,12 +205,16 @@ body {
   height: 751px;
   background-position: center;
   background-size: cover;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+
+  margin-top: -140px;
 }
 
 .story__container {
   display: flex;
   justify-content: center;
-  margin-top: 690px;
+  margin-top: 90px;
 }
 
 .story__text {
@@ -599,10 +604,6 @@ input[type]:focus,
     margin-top: 40px;
     font-size: 1rem;
   }
-
-  #main__footer {
-    /* margin-top: 320px; */
-  }
 }
 
 @media screen and (max-width: 1230px) {
@@ -685,10 +686,6 @@ input[type]:focus,
   .contact__btn {
     left: 0;
     margin: 70px auto;
-  }
-
-  #main__footer {
-    /* margin-top: 400px; */
   }
 }
 
@@ -773,7 +770,7 @@ input[type]:focus,
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-top: 770px;
+    /* margin-top: 770px; */
   }
 
   .story__logo {
@@ -913,16 +910,13 @@ input[type]:focus,
   .sidenav__menu li {
     margin-bottom: 65px;
   }
-  #main__footer {
-    margin-top: 50px;
-  }
   .story__bg {
     background-image: url("../images/phone_story_img1.png");
     width: 576px;
     height: 607px;
   }
   .story__container {
-    margin-top: 543px;
+    /* margin-top: 543px; */
   }
   .story__logo {
     background-image: url("../images/phone_story_logo.png");
@@ -942,9 +936,6 @@ input[type]:focus,
   }
   textarea {
     width: 514px;
-  }
-  #story + #main__footer {
-    margin-top: 400px;
   }
 }
 
