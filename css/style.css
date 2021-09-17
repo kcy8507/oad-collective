@@ -340,8 +340,10 @@ ol > li {
 } */
 
 .answer {
-  height: 100px;
+  /* height: 100px; */
   margin: 10px;
+  font-size: 1.1rem;
+  line-height: 2rem;
   animation: answerOpen 0.2s ease-in-out;
 }
 
@@ -940,6 +942,9 @@ input[type]:focus,
   }
   textarea {
     width: 514px;
+  }
+  #story + #main__footer {
+    margin-top: 400px;
   }
 }
 
