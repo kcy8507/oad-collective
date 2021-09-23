@@ -3,6 +3,11 @@
   --background-color: white;
   --accent-color: red;
 }
+
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-family: "Noto Sans KR", sans-serif;
   word-break: keep-all;
@@ -91,7 +96,7 @@ body {
   font-family: "Noto Serif JP", serif;
   text-decoration: none;
   color: var(--text-color);
-  font-size: 1.9rem;
+  font-size: 3rem;
 }
 
 .sidenav__menu li {
@@ -144,13 +149,10 @@ body {
 #main__footer {
   padding: 50px 0px;
   text-align: center;
-  line-height: 1.4rem;
+  line-height: 2.4rem;
   margin-top: 50px;
-}
-
-.footer__info {
   font-family: "Noto Sans KR", sans-serif;
-  font-size: 1rem;
+  font-size: 1.6rem;
 }
 
 .footer_logo {
@@ -219,8 +221,8 @@ body {
 
 .story__text {
   width: 804px;
-  font-size: 1.1rem;
-  line-height: 1.7rem;
+  font-size: 2rem;
+  line-height: 2.4rem;
 }
 
 .story__logo {
@@ -243,7 +245,7 @@ body {
 .portfolio__title,
 .guide__title {
   font-family: "Noto Serif JP", serif;
-  font-size: 1.5rem;
+  font-size: 2.4rem;
   margin: 37px 0;
 }
 
@@ -255,7 +257,7 @@ body {
 
 .works__text1 {
   font-family: "Noto Serif JP", serif;
-  font-size: 2.2rem;
+  font-size: 3.4rem;
   color: #4a3e2e;
   position: relative;
   left: 15%;
@@ -264,8 +266,8 @@ body {
 
 .works__text2 {
   width: 630px;
-  font-size: 1.2rem;
-  line-height: 1.7rem;
+  font-size: 2rem;
+  line-height: 3rem;
   position: absolute;
   left: 50%;
   margin-top: 113px;
@@ -330,8 +332,8 @@ body {
 ol > li {
   border-bottom: 1px solid rgba(0, 0, 0, 0.452);
   color: rgba(0, 0, 0, 0.753);
-  font-size: 1.1rem;
-  line-height: 3rem;
+  font-size: 1.8rem;
+  line-height: 5rem;
 }
 
 .question {
@@ -347,8 +349,8 @@ ol > li {
 .answer {
   /* height: 100px; */
   margin: 10px;
-  font-size: 1.1rem;
-  line-height: 2rem;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
   animation: answerOpen 0.2s ease-in-out;
 }
 
@@ -377,10 +379,10 @@ ol > li {
 .contact__title {
   font-family: "Noto Serif KR", serif;
   font-weight: 600;
-  font-size: 1.8rem;
+  font-size: 2.9rem;
   text-align: center;
   margin-top: 50px;
-  line-height: 3rem;
+  line-height: 5rem;
 }
 .contact__info {
   display: flex;
@@ -389,13 +391,13 @@ ol > li {
 
 .info__OadCONTACT {
   font-family: "Noto Serif JP", serif;
-  font-size: 2.1rem;
+  font-size: 3.4rem;
 }
 
 .info__text {
   width: 388px;
-  font-size: 1.1rem;
-  line-height: 2.4rem;
+  font-size: 2rem;
+  line-height: 4rem;
   margin-top: 43px;
 }
 
@@ -440,7 +442,7 @@ ol > li {
   height: 100%;
   width: 100%;
   border: none;
-  font-size: 17px;
+  font-size: 2rem;
   border-bottom: 1px solid silver;
   font-family: "Noto Sans KR", sans-serif;
 }
@@ -448,7 +450,7 @@ ol > li {
 .contact__form input:focus ~ label,
 .contact__form input:valid ~ label {
   transform: translateY(-20px);
-  font-size: 15px;
+  font-size: 2rem;
   color: #000000;
 }
 
@@ -458,6 +460,7 @@ ol > li {
 .contact__personalform .contact__form label {
   position: absolute;
   font-family: "Noto Serif KR", serif;
+  font-size: 2rem;
   font-weight: 400;
   bottom: 10px;
   left: 0;
@@ -492,6 +495,7 @@ ol > li {
 }
 .contact__contents label {
   margin-bottom: 10px;
+  font-size: 2rem;
   font-family: "Noto Serif KR", serif;
   font-weight: 400;
   color: grey;
@@ -501,7 +505,7 @@ textarea {
   width: 665px;
   height: 185px;
   resize: none;
-  font-size: 1.1rem;
+  font-size: 2rem;
   font-family: "Noto Sans KR", sans-serif;
   border: none;
   border-bottom: 1px solid rgb(126, 126, 126);
@@ -520,8 +524,8 @@ input[type]:focus,
   background-color: white;
   font-family: "Noto Serif KR", serif;
   font-weight: 600;
-  font-size: 1.3rem;
-  line-height: 3rem;
+  font-size: 2.3rem;
+  line-height: 4rem;
   color: var(--text-color);
   border: 1px solid rgb(95, 95, 95);
   height: 59px;
@@ -602,7 +606,8 @@ input[type]:focus,
     position: relative;
     left: 0;
     margin-top: 40px;
-    font-size: 1rem;
+    font-size: 1.8rem;
+    line-height: 3rem;
   }
 }
 
@@ -655,15 +660,16 @@ input[type]:focus,
 
   .story__text {
     width: 460px;
-    font-size: 1rem;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
   }
 
   .info__title {
     display: none;
   }
   .contact__title {
-    font-size: 1.5rem;
-    line-height: 2.8rem;
+    font-size: 2rem;
+    line-height: 4.2rem;
   }
   .contact__box::before {
     display: none;
@@ -785,7 +791,8 @@ input[type]:focus,
 
   .story__text {
     width: 460px;
-    font-size: 1rem;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
   }
 
   #main__footer {
@@ -799,10 +806,12 @@ input[type]:focus,
     margin-top: 80px;
   }
   .works__text1 {
-    font-size: 1.8rem;
+    font-size: 2.8rem;
     margin-top: 0;
   }
   .works__text2 {
+    font-size: 1.8rem;
+
     width: 370px;
   }
   .works__textbox:last-child {
@@ -905,7 +914,7 @@ input[type]:focus,
     left: 40px;
   }
   .sidenav__menu a {
-    font-size: 1.5rem;
+    font-size: 2.2rem;
   }
   .sidenav__menu li {
     margin-bottom: 65px;
@@ -915,9 +924,7 @@ input[type]:focus,
     width: 576px;
     height: 607px;
   }
-  .story__container {
-    /* margin-top: 543px; */
-  }
+
   .story__logo {
     background-image: url("../images/phone_story_logo.png");
     width: 272px;
