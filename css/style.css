@@ -947,7 +947,7 @@ input[type]:focus,
 }
 
 /* email */
-#honeypot {
+.honeypot-field {
   display: none;
 }
 
