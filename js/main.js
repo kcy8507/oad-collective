@@ -33,12 +33,14 @@ cancelBtn.addEventListener("click", function () {
 });
 
 var questionArray = document.querySelectorAll(".question");
+let questionBorder = [...questionArray];
 var answerArray = document.querySelectorAll(".answer");
-console.log(answerArray);
+// console.log(answerArray);
 document.querySelectorAll(".question").forEach(function (i) {
   i.addEventListener("click", function (e) {
-    console.log(e.target);
+    // console.log(e.target);
     const clickedQuestion = [...questionArray].indexOf(e.target);
     answerArray[clickedQuestion].classList.toggle("hidden");
+    // console.log(clickedQuestion);
   });
 });

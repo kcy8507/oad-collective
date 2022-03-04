@@ -12,55 +12,53 @@
     <script src="/js/main.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
+    
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap"
       rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
+      />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
       href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap"
       rel="stylesheet"
-    />
-    <title>oad collective_story</title>
-  </head>
-  <body>
+      />
+      <title>oad collective_story</title>
+    </head>
+    <body>
+    <div class="story__bg"></div>
     <nav class="nav__container">
-        <div class="black_bg hidden"></div>
-        <div class="sidenav hidden">
-          <div class="sidenav__cancel">
-            <a href="#" class="cancel"><img src="/images/cancel.svg" /></a>
+      <div class="black_bg hidden"></div>
+      <div class="sidenav hidden">
+        <figure class="sidenav__cancel">
+          <a href="#" class="cancel"><img src="/images/cancel.svg" /></a>
+        </figure>
+        <div class="sidenav__lists">
+          <div class="sidenav__logo">
+            <a href="/main.html"><div class="logo"></div></a>
           </div>
-          <div class="sidenav__lists">
-            <div class="sidenav__logo">
-              <a href="/main.html"><div class="logo"></div></a>
-            </div>
-            <ul class="sidenav__menu">
-              <li><a href="/story.html">STORY</a></li>
-              <li><a href="/works.html">WORKS</a></li>
-              <li><a href="/portfolio.html">PORTFOLIO</a></li>
-              <li><a href="/guide.html">GUIDE</a></li>
-              <li><a href="/contact.html">CONTACT</a></li>
-            </ul>
-          </div>
+          <ul class="sidenav__menu">
+            <li><a href="/story.html">STORY</a></li>
+            <li><a href="/works.html">WORKS</a></li>
+            <li><a href="/portfolio.html">PORTFOLIO</a></li>
+            <li><a href="/guide.html">GUIDE</a></li>
+            <li><a href="/contact.html">CONTACT</a></li>
+          </ul>
         </div>
-
-        <div class="inner">
-          <div class="nav">
-            <div class="navbar__logo">
-              <a href="/main.html"><div class="logo-white"></div></a>
-            </div>
-            <div class="navbar__icons">
-              <a href="#" class="navbar__toggleBtn"
-                ><img src="/images/white_hamburger.svg"
-              /></a>
-            </div>
+      </div>
+      
+      <div class="nav">
+          <div class="inner">
+          <div class="navbar__logo">
+            <a href="/main.html"><div class="logo-white"></div></a>
           </div>
-    </nav>
-     <!-- --------------------------story section------------------------ -->
-    <section id="story">
-        <div class="story__bg"></div>
+            <a href="#" class="navbar__toggleBtn"><figure class="navbar__icons-w"></figure></a>
+        </div>
+        </div>
+      </nav>
+      <!-- --------------------------story section------------------------ -->
+      <section id="story">
+        <div class="story__bg-space"></div>
         <div class="story__container">
           <div class="story__logo"></div>
           <div class="story__text">
@@ -76,6 +74,7 @@
       </div>
     </section>
     <section id="main__footer">
+      <div class="inner">
       <div class="footer_logo"></div>
       <p class="footer__info">
         Wedding&Life event company
@@ -90,6 +89,7 @@
         <br />
         &copy;2021 oadcollective.Site by mangosoft
       </p>
+    </div>
     </section>
   </body>
 </html>

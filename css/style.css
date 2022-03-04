@@ -1,6 +1,18 @@
 @import url(./reset.css);
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap");
+@font-face {
+  font-family: "Pretendard-Light";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+#guide .inner .guide__container .guide__title, #portfolio .inner .portfolio__title, #works .works__container .inner .works__title {
+  font-family: "Noto Serif", serif;
+  font-size: 24px;
+  text-align: left;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -49,8 +61,6 @@ body {
 }
 .nav__container .sidenav .sidenav__cancel {
   position: absolute;
-}
-.nav__container .sidenav .sidenav__cancel img {
   width: 28px;
   height: 28px;
 }
@@ -63,7 +73,7 @@ body {
   margin-top: 98px;
 }
 .nav__container .sidenav .sidenav__lists .sidenav__logo .logo {
-  width: 241px;
+  width: 245px;
   height: 29px;
   background-position: center;
   background-size: cover;
@@ -81,7 +91,18 @@ body {
   font-size: 30px;
 }
 
-.navbar__icons img {
+.navbar__icons {
+  background-image: url(../images/hamburger.svg);
+  background-position: center;
+  background-size: cover;
+  width: 40px;
+  height: 30px;
+}
+
+.navbar__icons-w {
+  background-image: url(../images/white_hamburger.svg);
+  background-position: center;
+  background-size: cover;
   width: 40px;
   height: 30px;
 }
@@ -92,40 +113,44 @@ body {
   height: 29px;
 }
 
-.nav {
+.nav .inner {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 0;
 }
 
 #main {
   height: auto;
 }
-#main .main__container {
+#main .inner {
+  padding: 180px 0;
+}
+#main .inner .main__container {
   display: flex;
   justify-content: space-between;
 }
-#main .main__container .main__img1 {
+#main .inner .main__container .main__img1 {
   background-image: url(../images/main-1.png);
-  flex-grow: 1;
-  height: 475px;
-  background-size: cover;
   background-position: center;
+  background-size: cover;
+  height: 475px;
+  flex-grow: 1;
   margin-right: 9px;
 }
-#main .main__container .main__img2 {
+#main .inner .main__container .main__img2 {
   background-image: url(../images/main-2.png);
-  flex-grow: 2;
-  height: 475px;
-  background-size: cover;
   background-position: center;
+  background-size: cover;
+  height: 475px;
+  flex-grow: 2;
   margin-right: 9px;
 }
-#main .main__container .main__img3 {
+#main .inner .main__container .main__img3 {
   background-image: url(../images/main-3.png);
-  flex-grow: 1;
-  height: 475px;
-  background-size: cover;
   background-position: center;
+  background-size: cover;
+  height: 475px;
+  flex-grow: 1;
 }
 
 .navbar__logo {
@@ -134,47 +159,131 @@ body {
   background-image: url(../images/white_logo.svg);
 }
 
-#story {
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  width: 100%;
-  height: auto;
-}
-#story .story__bg {
+.story__bg {
   background-image: url(../images/story1.png);
+  background-position: center;
   background-size: cover;
   height: 751px;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+}
+
+#story .story__bg-space {
+  width: 100%;
+  height: 621px;
+}
+#story .story__container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 80px 0;
+}
+#story .story__container .story__logo {
+  background-image: url(../images/logo.svg);
+  background-repeat: no-repeat;
+  width: 242px;
+  height: 30px;
+  margin-right: 91px;
+}
+#story .story__container .story__text {
+  font-family: "Pretandard-Light";
+  font-size: 20px;
+  width: 804px;
+  text-align: left;
+  line-height: 24px;
 }
 
 #works {
   height: auto;
+  margin-top: 40px;
 }
-#works .inner {
+#works .works__container {
+  height: auto;
+}
+#works .works__container .inner {
   padding-top: 0;
 }
-#works .inner .works__container .works__title {
-  font-family: "Noto Serif", serif;
-  font-size: 24px;
-  text-align: left;
-}
-#works .inner .works__container .works__textbox {
+#works .works__container .inner .works__textbox {
   display: flex;
   align-items: center;
   align-content: center;
   justify-content: space-evenly;
-  margin-top: 113px;
+  margin-top: 150px;
   text-align: left;
 }
-#works .inner .works__container .works__textbox .works__text1 {
+#works .works__container .inner .works__textbox .works__text1 {
   font-family: "Noto Serif", serif;
   font-size: 34px;
   color: #4a3e2e;
+  position: absolute;
+  left: 12%;
 }
-#works .inner .works__container .works__textbox .works__text2 {
+#works .works__container .inner .works__textbox .works__text2 {
   font-size: 20px;
   line-height: 30px;
   width: 682px;
+  position: absolute;
+  right: 12%;
+}
+
+#portfolio .inner {
+  padding: 0;
+  margin-top: 40px;
+}
+#portfolio .inner .portfolio__imgContainer {
+  margin-top: 21px;
+}
+
+#guide {
+  height: 100vh;
+}
+#guide .inner {
+  padding: 40px 0;
+}
+#guide .inner .guide__container .toggle-content {
+  font-family: "Pretandard-Light";
+  font-size: 18px;
+  margin-top: 20px;
+  text-align: left;
+}
+#guide .inner .guide__container .toggle-content li:not(:last-child) {
+  line-height: 50px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+#guide .inner .guide__container .toggle-content .answer {
+  margin-top: 10px;
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+
+#contact .contact__title {
+  font-family: "Noto Serif", serif;
+  font-weight: bold;
+  font-size: 29px;
+  text-align: center;
+  line-height: 50px;
+}
+#contact .contact__info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#contact .contact__info .info__title .info__OadCONTACT {
+  font-family: "Noto Serif", serif;
+  font-size: 34px;
+}
+#contact .contact__info .info__title::after {
+  content: "";
+  border-right: 1px solid black;
+}
+#contact .contact__info .info__title .info__text {
+  font-size: 20px;
+  text-align: left;
+  line-height: 40px;
+  margin-top: 43px;
+  width: 395px;
 }
 
 #main__footer {
@@ -187,10 +296,10 @@ body {
 }
 #main__footer .footer_logo {
   background-image: url(../images/logo.svg);
-  width: 125px;
-  height: 15px;
   background-size: cover;
   background-position: center;
+  width: 145px;
+  height: 17px;
   margin: 0 auto;
 }
 #main__footer .footer__info {
