@@ -113,6 +113,13 @@ body {
   height: 29px;
 }
 
+.nav {
+  position: fixed;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, 0);
+  z-index: 1;
+}
 .nav .inner {
   display: flex;
   justify-content: space-between;
@@ -171,7 +178,7 @@ body {
 
 #story .story__bg-space {
   width: 100%;
-  height: 621px;
+  height: 751px;
 }
 #story .story__container {
   display: flex;
@@ -196,7 +203,7 @@ body {
 
 #works {
   height: auto;
-  margin-top: 40px;
+  padding-top: 179px;
 }
 #works .works__container {
   height: auto;
@@ -227,6 +234,9 @@ body {
   right: 12%;
 }
 
+#portfolio {
+  padding-top: 179px;
+}
 #portfolio .inner {
   padding: 0;
   margin-top: 40px;
@@ -237,6 +247,7 @@ body {
 
 #guide {
   height: 100vh;
+  padding-top: 179px;
 }
 #guide .inner {
   padding: 40px 0;
@@ -245,6 +256,8 @@ body {
   font-family: "Pretandard-Light";
   font-size: 18px;
   margin-top: 20px;
+  padding-top: 179px;
+  padding-top: 179px;
   text-align: left;
 }
 #guide .inner .guide__container .toggle-content li:not(:last-child) {
@@ -258,6 +271,9 @@ body {
   margin-bottom: 20px;
 }
 
+#contact {
+  padding-top: 179px;
+}
 #contact .contact__title {
   font-family: "Noto Serif", serif;
   font-weight: bold;
@@ -266,17 +282,25 @@ body {
   line-height: 50px;
 }
 #contact .contact__info {
+  margin-top: 77px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+#contact .contact__info .info__title {
+  width: 100%;
+  height: 542px;
+  margin-right: 100px;
+  border-right: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
 #contact .contact__info .info__title .info__OadCONTACT {
+  text-align: left;
   font-family: "Noto Serif", serif;
   font-size: 34px;
-}
-#contact .contact__info .info__title::after {
-  content: "";
-  border-right: 1px solid black;
 }
 #contact .contact__info .info__title .info__text {
   font-size: 20px;
@@ -284,6 +308,62 @@ body {
   line-height: 40px;
   margin-top: 43px;
   width: 395px;
+}
+#contact .contact__info .contact__box {
+  width: 100%;
+}
+#contact .contact__info .contact__box .contact__personalform .contact__form input {
+  width: 100%;
+  height: 40px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid black;
+  margin-top: 30px;
+}
+#contact .contact__info .contact__box .contact__personalform .contact__form input::-moz-placeholder {
+  font-family: "Noto Serif", serif;
+  font-size: 20px;
+}
+#contact .contact__info .contact__box .contact__personalform .contact__form input:-ms-input-placeholder {
+  font-family: "Noto Serif", serif;
+  font-size: 20px;
+}
+#contact .contact__info .contact__box .contact__personalform .contact__form input::placeholder {
+  font-family: "Noto Serif", serif;
+  font-size: 20px;
+}
+#contact .contact__info .contact__box .contact__contents textarea {
+  width: 100%;
+  height: 215px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid black;
+  margin-top: 30px;
+}
+#contact .contact__info .contact__box .contact__contents textarea::-moz-placeholder {
+  font-family: "Noto Serif", serif;
+  font-size: 20px;
+}
+#contact .contact__info .contact__box .contact__contents textarea:-ms-input-placeholder {
+  font-family: "Noto Serif", serif;
+  font-size: 20px;
+}
+#contact .contact__info .contact__box .contact__contents textarea::placeholder {
+  font-family: "Noto Serif", serif;
+  font-size: 20px;
+}
+#contact .contact__info .contact__box .contact__btn {
+  width: 248px;
+  height: 59px;
+  border: 1px solid #707070;
+  background: none;
+  margin-top: 67px;
+  font-family: "Noto Serif", serif;
+  font-size: 23px;
+}
+
+.honeypot-field {
+  display: none;
 }
 
 #main__footer {
