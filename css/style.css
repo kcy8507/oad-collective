@@ -256,20 +256,20 @@ body {
 #guide .inner .guide__container .toggle-content {
   font-family: "Pretandard-Light";
   font-size: 18px;
+  border: 1px solid salmon;
   margin-top: 20px;
-  padding-top: 179px;
   padding-top: 179px;
   text-align: left;
 }
-#guide .inner .guide__container .toggle-content li:not(:last-child) {
+#guide .inner .guide__container .toggle-content li:not(:first-child) {
   line-height: 50px;
   border-top: 1px solid black;
-  border-bottom: 1px solid black;
 }
 #guide .inner .guide__container .toggle-content .answer {
   margin-top: 10px;
   line-height: 25px;
   margin-bottom: 20px;
+  border-top: 1px solid yellow;
 }
 
 #contact {
