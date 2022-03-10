@@ -38,6 +38,7 @@ body {
   height: 100%;
   padding: 100px 0;
   margin: 0 auto;
+  width: calc(100% - 280px);
 }
 
 .hidden {
@@ -125,6 +126,7 @@ body {
   }
 }
 .nav {
+  width: 100%;
   position: fixed;
   left: 50%;
   top: 0;
@@ -229,7 +231,7 @@ body {
 
 #works {
   height: auto;
-  padding-top: 179px;
+  padding-top: 130px;
   .works__container {
     height: auto;
     .inner {
@@ -266,7 +268,7 @@ body {
 }
 
 #portfolio {
-  padding-top: 179px;
+  padding-top: 130px;
   .inner {
     padding: 0;
     margin-top: 40px;
@@ -281,7 +283,7 @@ body {
 
 #guide {
   height: 100vh;
-  padding-top: 179px;
+  padding-top: 130px;
   .inner {
     padding: 40px 0;
     .guide__container {
@@ -293,30 +295,20 @@ body {
           family: "Pretandard-Light";
           size: 18px;
         }
-        border: 1px solid salmon;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
         margin-top: 20px;
-        padding-top: 179px;
-        // padding-top: 179px;
         text-align: left;
-        // li::after {
-        //   line-height: 50px;
-        //   width: 10px;
-        //   height: 50px;
-        //   border: 1px solid black;
-        //   content: "";
-        // }
+        line-height: 50px;
         li:not(:first-child) {
-          line-height: 50px;
           border-top: 1px solid black;
-          // border-bottom: 1px solid black;
-
-          // margin-bottom: -1px;
         }
         .answer {
-          margin-top: 10px;
+          // margin-top: 10px;
+          padding-top: 10px;
           line-height: 25px;
           margin-bottom: 20px;
-          border-top: 1px solid yellow;
+          border-top: 1px solid black;
         }
       }
     }
@@ -324,7 +316,7 @@ body {
 }
 
 #contact {
-  padding-top: 179px;
+  padding-top: 130px;
   .contact__title {
     font: {
       family: "Noto Serif", serif;
@@ -335,10 +327,13 @@ body {
     line-height: 50px;
   }
   .contact__info {
-    margin-top: 77px;
+    // width: 1322px;
+    width: calc(100% - 318px);
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0 auto;
+    margin-top: 77px;
     .info__title {
       // flex-grow: 3;
       width: 100%;
@@ -372,6 +367,8 @@ body {
       }
     }
     .contact__box {
+      display: flex;
+      flex-direction: column;
       // flex-grow: 1;
       width: 100%;
       .contact__personalform {
@@ -414,6 +411,7 @@ body {
         border: 1px solid #707070;
         background: none;
         margin-top: 67px;
+        align-self: flex-end;
         font: {
           family: "Noto Serif", serif;
           size: 23px;
