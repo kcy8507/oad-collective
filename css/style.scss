@@ -585,6 +585,9 @@ body {
 }
 
 @media screen and (max-width: 576px) {
+  .inner {
+    padding: 60px 0;
+  }
   .nav__container {
     .sidenav {
       padding: 35px;
