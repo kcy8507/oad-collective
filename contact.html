@@ -33,6 +33,7 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> 
     <title>oad collective_contact</title>
   </head>
   <body>
@@ -71,12 +72,12 @@
     <section id="contact">
           <div class="inner">
         <div class="contact__container">
-          <div class="contact__title">
+          <div class="contact__title"  data-aos="fade-up" data-aos-duration="1500"> 
             상담신청을 남겨주시면<br />좀 더 자세하게 안내해드리도록 하겠습니다
           </div>
-          <div class="contact__info">
+          <div class="contact__info"  data-aos="fade-down" data-aos-duration="1500">
             <div class="info__title">
-              <div class="info__OadCONTACT">Oad CONTACT</div>
+              <div class="info__OadCONTACT" >Oad CONTACT</div>
               <div class="info__text">
                 오아드 컬렉티브의 연결 설명설명 설명하고 예식일 예식장소
                 안내해드리도록 하겠습니다 남겨주세요 감사합니다
@@ -145,5 +146,9 @@
       </p>
     </div>
     </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

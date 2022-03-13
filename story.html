@@ -23,10 +23,13 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap"
       rel="stylesheet"
       />
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
       <title>oad collective_story</title>
     </head>
     <body>
-    <div class="story__bg"></div>
+    <div class="story__bg" data-aos="fade-down"
+     data-aos-duration="1500"></div>
     <nav class="nav__container">
       <div class="black_bg hidden"></div>
       <div class="sidenav hidden">
@@ -60,8 +63,8 @@
       <section id="story">
         <div class="story__bg-space"></div>
         <div class="story__container">
-          <div class="story__logo"></div>
-          <div class="story__text">
+          <div class="story__logo"  data-aos="fade-right" data-aos-duration="1500"></div>
+          <div class="story__text" data-aos="fade-up" data-aos-duration="1500">
             오아드 콜렉티브는 기획, 연출, 디자인, 진행에 이르기까지 웨딩 및
             라이프 이벤트 디렉팅을 풍부한 경험과 전문적인 지식이 있는
             웨딩디렉터, 플로리스트, 프로듀서 등 각 분야 전문가와 함께합니다.
@@ -91,5 +94,9 @@
       </p>
     </div>
     </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
