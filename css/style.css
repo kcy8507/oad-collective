@@ -439,6 +439,11 @@ body {
   font-family: "Noto Serif", serif;
   font-size: 23px;
 }
+#contact .contact__info .contact__box .thankyou_message {
+  font-size: 17px;
+  margin-top: 15px;
+  line-height: 25px;
+}
 
 .honeypot-field {
   display: none;
