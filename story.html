@@ -8,63 +8,63 @@
       content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no"
     />
 
-    <link rel="stylesheet" href="/css/reset.css" />
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <script src="/js/main.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
+    
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap"
       rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
+      />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
       href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap"
       rel="stylesheet"
-    />
-    <title>oad collective_story</title>
-  </head>
-  <body>
-    <nav class="nav__container">
-        <div class="black_bg hidden"></div>
-        <div class="sidenav hidden">
-          <div class="sidenav__cancel">
-            <a href="#" class="cancel"><img src="/images/cancel.svg" /></a>
-          </div>
-          <div class="sidenav__lists">
-            <div class="sidenav__logo">
-              <a href="/main.html"><div class="logo"></div></a>
-            </div>
-            <ul class="sidenav__menu">
-              <li><a href="/story.html">STORY</a></li>
-              <li><a href="/works.html">WORKS</a></li>
-              <li><a href="/portfolio.html">PORTFOLIO</a></li>
-              <li><a href="/guide.html">GUIDE</a></li>
-              <li><a href="/contact.html">CONTACT</a></li>
-            </ul>
-          </div>
-        </div>
+      />
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-        <div class="inner">
-          <div class="nav">
-            <div class="navbar__logo">
-              <a href="/main.html"><div class="logo-white"></div></a>
-            </div>
-            <div class="navbar__icons">
-              <a href="#" class="navbar__toggleBtn"
-                ><img src="/images/white_hamburger.svg"
-              /></a>
-            </div>
+      <title>oad collective_story</title>
+    </head>
+    <body>
+    <div class="story__bg" data-aos="fade-down"
+     data-aos-duration="1500"></div>
+    <nav class="nav__container">
+      <div class="black_bg hidden"></div>
+      <div class="sidenav hidden">
+        <figure class="sidenav__cancel">
+          <a href="#" class="cancel"><img src="/images/cancel.svg" /></a>
+        </figure>
+        <div class="sidenav__lists">
+          <div class="sidenav__logo">
+            <a href="/main.html"><div class="logo"></div></a>
           </div>
-    </nav>
-     <!-- --------------------------story section------------------------ -->
-    <section id="story">
-        <div class="story__bg"></div>
+          <ul class="sidenav__menu">
+            <li><a href="/story.html">STORY</a></li>
+            <li><a href="/works.html">WORKS</a></li>
+            <li><a href="/portfolio.html">PORTFOLIO</a></li>
+            <li><a href="/guide.html">GUIDE</a></li>
+            <li><a href="/contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="nav">
+          <div class="inner">
+          <div class="navbar__logo">
+            <a href="/main.html"><div class="logo-white"></div></a>
+          </div>
+            <a href="#" class="navbar__toggleBtn"><figure class="navbar__icons-w"></figure></a>
+        </div>
+        </div>
+      </nav>
+      <!-- --------------------------story section------------------------ -->
+      <section id="story">
+        <div class="story__bg-space"></div>
         <div class="story__container">
-          <div class="story__logo"></div>
-          <div class="story__text">
+          <div class="story__logo"  data-aos="fade-right" data-aos-duration="1500"></div>
+          <div class="story__text" data-aos="fade-up" data-aos-duration="1500">
             오아드 콜렉티브는 기획, 연출, 디자인, 진행에 이르기까지 웨딩 및
             라이프 이벤트 디렉팅을 풍부한 경험과 전문적인 지식이 있는
             웨딩디렉터, 플로리스트, 프로듀서 등 각 분야 전문가와 함께합니다.
@@ -77,20 +77,26 @@
       </div>
     </section>
     <section id="main__footer">
-      <p class="footer__info">
+      <div class="inner">
       <div class="footer_logo"></div>
+      <p class="footer__info">
         Wedding&Life event company
         <br />
         <br />
         010.9949.1356
         <br />
-        사업자번호 000-00-0000 대표:김효경
+        사업자번호 676-65-00451 대표: 김효경
         <br />
-        전남 여수시 oo로 000/oad_collective.@daum.net
+        전남 여수시 무선로 50/oad_collective.@daum.net
         <br />
         <br />
         &copy;2021 oadcollective.Site by mangosoft
       </p>
+    </div>
     </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

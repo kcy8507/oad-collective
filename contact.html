@@ -33,6 +33,7 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> 
     <title>oad collective_contact</title>
   </head>
   <body>
@@ -56,28 +57,27 @@
         </div>
       </div>
 
-      <div class="inner">
-        <div class="nav">
+      <div class="nav">
+          <div class="inner">
           <div class="navbar__logo">
             <a href="/main.html"><div class="logo"></div></a>
           </div>
           <div class="navbar__icons">
-            <a href="#" class="navbar__toggleBtn"
-              ><img src="/images/hamburger.svg"
-            /></a>
+            <a href="#" class="navbar__toggleBtn"><figure class="navbar__icons"></figure></a>
           </div>
+        </div>
         </div>
     </nav>
     <!-- --------------------------contact section------------------------ -->
     <section id="contact">
           <div class="inner">
         <div class="contact__container">
-          <div class="contact__title">
+          <div class="contact__title"  data-aos="fade-up" data-aos-duration="1500"> 
             상담신청을 남겨주시면<br />좀 더 자세하게 안내해드리도록 하겠습니다
           </div>
-          <div class="contact__info">
+          <div class="contact__info"  data-aos="fade-down" data-aos-duration="1500">
             <div class="info__title">
-              <div class="info__OadCONTACT">Oad CONTACT</div>
+              <div class="info__OadCONTACT" >Oad CONTACT</div>
               <div class="info__text">
                 오아드 컬렉티브의 연결 설명설명 설명하고 예식일 예식장소
                 안내해드리도록 하겠습니다 남겨주세요 감사합니다
@@ -89,28 +89,24 @@
               <div class="contact__personalform">
                 <div class="contact__form">
                   <input id="name" name="이름" required />
-                  <div class="underline"></div>
-                  <label>이름</label>
+                  <label for="name"><span>이름</span></label>
                 </div>
                 <div class="contact__form">
                   <input id="email"
                   name="이메일주소"
                   type="text"
-                  value=""
                   required />
-                  <div class="underline"></div>
-                  <label>이메일주소</label>
+                  <label for="email"><span>이메일주소</span></label>
                 </div>
                 <div class="contact__form">
-                  <input id="phone" name="전화번호" required />
-                  <div class="underline"></div>
-                  <label>전화번호</label>
+                  <input id="phone" name="전화번호"required />
+                  <label for="phone"><span>전화번호</span></label>
                 </div>
               </div>
               <div class="contact__contents">
-                <label>문의내용</label>
+                <!-- <label>문의내용</label> -->
                 <textarea id="message"
-                name="문의내용"></textarea>
+                name="문의내용" placeholder="문의내용"></textarea>
               </div>
               <fieldset class="pure-group honeypot-field">
                 <label for="honeypot"
@@ -121,6 +117,8 @@
                 <input id="honeypot" type="text" name="honeypot" value="" />
               </fieldset>
               <button class="contact__btn">문의하기</button>
+              <div style="display:none" class="thankyou_message">
+                <p>연락주셔서 감사합니다. <br>빠른 시일 내에 답변 드리겠습니다.</p></div>
             </form>
           </div>
         </div>
@@ -128,20 +126,26 @@
     </div>
     </section>
     <section id="main__footer">
+      <div class="inner">
+      <div class="footer_logo"></div>
       <p class="footer__info">
-        <div class="footer_logo"></div>
         Wedding&Life event company
         <br />
         <br />
         010.9949.1356
         <br />
-        사업자번호 000-00-0000 대표:김효경
+        사업자번호 676-65-00451 대표: 김효경
         <br />
-        전남 여수시 oo로 000/oad_collective.@daum.net
+        전남 여수시 무선로 50/oad_collective.@daum.net
         <br />
         <br />
         &copy;2021 oadcollective.Site by mangosoft
       </p>
+    </div>
     </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

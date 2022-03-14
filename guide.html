@@ -24,6 +24,8 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <title>oad collective_guide</title>
   </head>
   <body>
@@ -47,16 +49,15 @@
         </div>
       </div>
 
-      <div class="inner">
-        <div class="nav">
+      <div class="nav">
+          <div class="inner">
           <div class="navbar__logo">
             <a href="/main.html"><div class="logo"></div></a>
           </div>
           <div class="navbar__icons">
-            <a href="#" class="navbar__toggleBtn"
-              ><img src="/images/hamburger.svg"
-            /></a>
+            <a href="#" class="navbar__toggleBtn"><figure class="navbar__icons"></figure></a>
           </div>
+        </div>
         </div>
     </nav>
     <!-- --------------------------main section------------------------ -->
@@ -97,20 +98,26 @@
     </div>
     </section>
     <section id="main__footer">
+      <div class="inner">
+      <div class="footer_logo"></div>
       <p class="footer__info">
-        <div class="footer_logo"></div>
         Wedding&Life event company
         <br />
         <br />
         010.9949.1356
         <br />
-        사업자번호 000-00-0000 대표:김효경
+        사업자번호 676-65-00451 대표: 김효경
         <br />
-        전남 여수시 oo로 000/oad_collective.@daum.net
+        전남 여수시 무선로 50/oad_collective.@daum.net
         <br />
         <br />
         &copy;2021 oadcollective.Site by mangosoft
       </p>
+    </div>
     </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
